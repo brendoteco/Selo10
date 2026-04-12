@@ -3799,7 +3799,7 @@
         const text = document.getElementById('statusText');
         
         indicator.className = `status-indicator ${isOpen ? 'open' : 'closed'}`;
-        text.textContent = isOpen ? 'Aberto agora' : 'Fechado';
+        text.textContent = isOpen ? 'Aberto ' : 'Fechado';
         
         if (isOpen && (closeTime - currentTime) < 30) {
             showToast('⚠️ Estamos próximos do horário de fechamento!', 'error');
